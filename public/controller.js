@@ -1,23 +1,6 @@
-var app = angular.module('test', []);
+app.controller('mainCtrl', function($scope) {
 
 
-app.controller('mainController', function($scope) {
-    var myValue = true;
-
-    var value2 = true;
-
-    $scope.click = function (){
-        if (myValue){
-            myValue = !myValue;
-        }
-    }
-
-    $scope.click2 = function (){
-        if (value2){
-            value2 = !value2;
-        }
-    }
-   
        $scope.contacts = [
            {
                id:1,

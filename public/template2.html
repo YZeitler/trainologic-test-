@@ -1,0 +1,9 @@
+<ul ng-repeat="x in contacts">
+    <li ui-sref="temp">{{x.name}}</li>
+    <ul ng-repeat="relative in x.contacts">
+        <li ui-sref="temp1">{{relative.name}}</li>
+        <ul ng-repeat="new in relative.contacts">
+            <li>{{new.name}}</li>
+        </ul>
+    </ul>
+</ul>
